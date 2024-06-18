@@ -1,2 +1,2 @@
 # PlanejadorDeViagens
-Projeto feito para apresentação na Universidade Estadual da Paraíba
+Projeto feito para apresentação na Universidade Estadual da Paraíba.
