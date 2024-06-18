@@ -46,7 +46,7 @@ def salvar_usuarios(usuarios):
 
 '''NESSA FUNÇÃO O OBJETIVO É ADICIONAR UMA VIAGEM NOVA'''
 def adicionar_viagem(viagens, usuario):
-    destino = input("Digite o destino: ")
+    destino = input("Digite o seu destino: ")
     
     while True:
         try:
@@ -80,8 +80,6 @@ def adicionar_viagem(viagens, usuario):
     })
     
     salvar_viagens(viagens)
-    print('Carregando informações...')
-    time.sleep(3)
     print("Viagem adicionada com sucesso!")
 
 '''AQUI SERÁ CONVERTIDO UMA STRING EM DATA'''
@@ -142,7 +140,6 @@ def salvar_viagens(viagens):
                 file.write(f"{viagem['destino']}|{viagem['data_inicio']}|{viagem['data_termino']}|{atividades}\n")
 
 '''ESSA É A FUNÇÃO MAIN OU FUNÇÃO PRINCIPAL, TODAS AS OUTRAS FUNÇÕES FICAM DENTRO DELA.'''
-
 def main():
     usuarios = carregar_usuarios()
     viagens = carregar_viagens()
